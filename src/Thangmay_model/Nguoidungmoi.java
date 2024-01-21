@@ -1,11 +1,12 @@
 package Thangmay_model;
 
-import java.util.ArrayList;
+import java.util.Objects;
+
 
 public class Nguoidungmoi extends Nguoidung{
 	private String phone;
 	private String sex;
-	private ArrayList<Nguoidung> danhsachnguoimoi = new ArrayList<Nguoidung>();
+	 
 	
 	public Nguoidungmoi(String name, String id, String email, String password, String phone, String sex) {
 		super(name, id, email, password);
@@ -29,19 +30,22 @@ public class Nguoidungmoi extends Nguoidung{
 		this.sex = sex;
 	}
 
-	public ArrayList<Nguoidung> getDanhsachnguoimoi() {
-		return danhsachnguoimoi;
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Nguoidungmoi other = (Nguoidungmoi) obj;
+		return Objects.equals(this.getId(), other.getId()); 
 	}
 
-	public void setDanhsachnguoimoi(ArrayList<Nguoidung> danhsachnguoimoi) {
-		this.danhsachnguoimoi = danhsachnguoimoi;
+	@Override
+	public String toString() {
+		return "Nguoidungmoi [phone=" + phone + ", sex=" + sex + ", name=" + name + ", id=" + id + ", email=" + email
+				+ ", password=" + password + "]";
 	}
-
-	public void themnguoimoi(Nguoidungmoi ndm)
-	{
-		this.danhsachnguoimoi.add(ndm);
-	}
-		
-	
 
 }

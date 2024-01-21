@@ -6,15 +6,14 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="db/mysql-connector-java-8.0.30.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="db/protobuf-java-3.19.4.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="D:/Documents/Jfreechart/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Jfreechart/jfreechart-1.5.0.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Database/connect/mysql-connector-java-8.0.30.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Database/connect/mssql-jdbc-11.2.1.jre18.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Database/connect/protobuf-java-3.19.4.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Jfreechart/libs/bridj-0.7.0.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Jfreechart/libs/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Jfreechart/webcam-capture-0.3.12.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/opencv/opencv/build/java/opencv-480.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
